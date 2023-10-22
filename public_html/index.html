@@ -1,0 +1,50 @@
+<!--
+    Assignment 7
+    Chatty - Chat Application HTML
+    
+    This HTML file is part of the Assignment 7 for creating a real-time chat application
+    called "Chatty." It provides the structure for the Chatty web application, including
+    the chat window and input fields for alias and messages. Users can send and receive
+    chat messages through this interface.
+    
+    Author: Sherali Ozodov
+    Course: CSC 337
+    File: index.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include the external stylesheet for styling -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Chatty</title>
+</head>
+<body>
+    <!-- Chat Window Section -->
+    <div class="chat-window">
+        <!-- Messages will be displayed here -->
+    </div>
+    <!-- Bottom Interface Section -->
+    <div class="input-field">
+        <form id="chat-form" method="POST">
+            <div class="input">
+                <!-- Alias -->
+                <label for="alias">Alias</label>
+                <input type="text" id="alias" name="alias" required>
+            </div>
+            <div class="input">
+                <!-- Message -->
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" required>
+            </div>
+            <!-- Send Message Button -->
+            <div class="send-button">
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </div>
+    <!-- Include the client.js script for handling client-side functionality -->
+    <script src="./client.js"></script>
+</body>
+</html>

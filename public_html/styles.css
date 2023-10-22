@@ -1,0 +1,91 @@
+/* 
+    Assignment 7
+    Chatty - Chat Application Styles
+    
+    This CSS file defines the styles for the Chatty web application. It includes
+    styling for the chat window, input fields, labels, buttons, and chat messages.
+    
+    Author: Sherali Ozodov
+    Course: CSC 337
+    File: styles.css
+*/
+
+/* Set the overall height of the page to 100% of the viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the chat-window to 70% of the page height */
+.chat-window {
+    height: 70%;
+    background-color:rgb(155, 223, 187);
+    overflow-y: auto;
+
+}
+/* Set the input-field to 30% of the page height */
+.input-field {
+    height: 30%;
+    background-color:rgb(10, 85, 47);
+}
+
+/* Common styles for both input fields */
+.input {
+    padding-left: 35px;
+    padding-top: 20px;
+}
+
+/* Common styles for both labels */
+.input label {
+    color: #99ada0;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* Common styles for both input fields */
+.input input {
+    font-size: 16px;
+    width: 150px;
+    padding: 5px;
+}
+
+/* Style for the Send Message button */
+.send-button {
+    padding-left: 35px;
+    padding-top: 20px;
+}
+
+/* Styles for the Send Message button */
+.send-button input[type="submit"] {
+    background-color: #1897ff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* Hover effect for the button */
+.send-button input[type="submit"]:hover {
+    background-color: #4aa2ff;
+}
+
+/* Style for chat messages */
+.chat-window p {
+    padding: 10px;
+    max-width: 80%;
+    margin: 0;
+}
+
+/* Style for user's messages (optional) */
+.chat-window p.user-message {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Style for system messages (optional) */
+.chat-window p.system-message {
+    background-color: #ddd;
+    color: #333;
+}
